@@ -11,13 +11,13 @@ function Navbar() {
                 <Link to="/" className="navbar-logo">
                   <h3><FontAwesomeIcon icon={solid('headset')} style={{color: 'white', fontSize: '28px'}}/></h3>
                 </Link>
-                <Link to="/aboutme" className="link-text">
+                <Link to="aboutme" className="link-text">
                   <h3>about me</h3>
                 </Link>
-                <Link to="/projects" className="link-text">
+                <Link to="projects" className="link-text">
                   <h3>projects</h3>
                 </Link>
-                <Link to="/contact" className="link-text">
+                <Link to="contactme" className="link-text">
                   <h3>contact</h3>
                 </Link>
                 <div className='menu-icon'>

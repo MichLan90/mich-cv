@@ -1,5 +1,28 @@
 /* GOOGLE FONT */
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+/* KEYFRAMES */
+@-webkit-keyframes fadeIn{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+@-moz-keyframes fadeIn{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+@-o-keyframes fadeIn{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+@keyframes fadeIn{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
 
 body {
   margin: 0;
@@ -45,7 +68,6 @@ body {
   border: none;
   position: absolute;
   background: transparent;
-  font-family: 'Roboto', sans-serif;
   color: rgb(70, 68, 68);
   width: 250px;
   height: 50px;
@@ -63,4 +85,29 @@ body {
   cursor: pointer;
   opacity: .8;
   transition: .3s;
+}
+
+.box-wrapper {
+  width: 50vw;
+  height: auto;
+  background-color: rgb(127, 126, 126);
+  margin: 0 auto;
+  margin-top: 30vh;
+  -webkit-animation: fadeIn 1 2s ease-out;
+  -moz-animation: fadeIn 1 2s ease-out;
+  -o-animation: fadeIn 1 2s ease-out;
+  animation: fadeIn 1 2s ease-out;
+  opacity: .90;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.box-wrapper > h1 {
+  font-family: 'Amatic SC', cursive;
+}
+
+.box-wrapper > .content {
+  font-family: 'Open Sans', sans-serif;
 }

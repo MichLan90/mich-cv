@@ -1,20 +1,14 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import Layout from './components/Layout';
+import {BrowserRouter} from 'react-router-dom';
 
 function App() {
   return (
-    <>
-    <Router>
+    <BrowserRouter>
       <Navbar/>
-      <Routes>
-        <Route path="/" exact />
-      </Routes>
-      <Hero/>
-    </Router>
-
-    </>
+      <Layout/>
+    </BrowserRouter>
   );
 }
 
