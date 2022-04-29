@@ -5,9 +5,10 @@ body {
   margin: 0;
 }
 
+/* NAVBAR */
+
 .navbar {
   background-color: black;
-  padding: 10px;
   font-family: 'Amatic SC', cursive;
   font-size: 1.2em;
 }
@@ -17,13 +18,49 @@ body {
   justify-content: center;
 }
 
-.navbar-container > a {
+.navbar-container > .navbar-logo {
+  width: 10%;
+}
+
+.navbar-container > .link-text {
   width: 10%;
   color: white;
   text-decoration: none;
   letter-spacing: 3px;
+  transition: 0.7s;
+}
+
+.navbar-container > .link-text:hover {
+  background-color: white;
+  color: black;
 }
 
 .navbar-container > a > h3 {
   text-align: center;
+}
+
+/* HERO */
+
+.hero-button{
+  border: none;
+  position: absolute;
+  background: transparent;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(70, 68, 68);
+  width: 250px;
+  height: 50px;
+  font-size: 2em;
+  opacity: .5;
+  top: 60vh;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  transition: .3s;
+}
+
+.hero-button:hover{
+  cursor: pointer;
+  opacity: .8;
+  transition: .3s;
 }
