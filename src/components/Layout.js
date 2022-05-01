@@ -1,7 +1,7 @@
 import Navbar from './Navbar';
 import Hero from './Hero';
 import Aboutme from './Aboutme';
-import Projects from './Projects';
+import Skills from './Skills';
 import Contactme from './Contactme';
 import {Route, Routes} from 'react-router-dom';
 
@@ -11,7 +11,7 @@ function Layout() {
         <Routes>
             <Route path="/" exact element={<Hero />}/>
             <Route path="/aboutme" exact element={<Aboutme />}/>
-            <Route path="/projects" exact element={<Projects />}/>
+            <Route path="/projects" exact element={<Skills />}/>
             <Route path="/contactme" exact element={<Contactme />}/>
         </Routes>
         <div className='light x1'></div>

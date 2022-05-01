@@ -15,7 +15,7 @@ function Navbar() {
                   <h3>about me</h3>
                 </Link>
                 <Link to="projects" className="link-text">
-                  <h3>projects</h3>
+                  <h3>skills</h3>
                 </Link>
                 <Link to="contactme" className="link-text">
                   <h3>contact</h3>
