@@ -19,7 +19,7 @@ function Hero() {
 
         <button className='hero-button'>
             <Link to='aboutme'>
-                <FontAwesomeIcon icon={solid('caret-right')} style={{color: 'white', fontSize: '78px'}} />
+                <FontAwesomeIcon icon={solid('caret-right')} style={{color: 'white', fontSize: '78px'}} /> 
             </Link>
         </button> 
 

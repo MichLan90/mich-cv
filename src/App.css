@@ -1,6 +1,7 @@
 /* GOOGLE FONT */
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 /* KEYFRAMES */
 @-webkit-keyframes fadeIn{
@@ -24,7 +25,7 @@
 }
 
 
-body {
+html, body {
   margin: 0;
 }
 
@@ -37,8 +38,14 @@ body {
 }
 
 .navbar-container {
+  width: 100vw;
   display: flex;
   justify-content: center;
+  position: fixed;
+  margin-top: 0px;
+  z-index: 1;
+  background-color: black;
+  top: 0;
 }
 
 .navbar-container > .navbar-logo {
@@ -84,24 +91,22 @@ body {
 .hero-button:hover{
   cursor: pointer;
   opacity: .8;
-  transition: .3s;
 }
 
 .box-wrapper {
-  width: 50vw;
+  overflow: auto;
+  width: 60vw;
   height: auto;
   background-color: rgb(127, 126, 126);
   margin: 0 auto;
-  margin-top: 30vh;
+  margin-top: 15vh;
   -webkit-animation: fadeIn 1 2s ease-out;
   -moz-animation: fadeIn 1 2s ease-out;
   -o-animation: fadeIn 1 2s ease-out;
-  animation: fadeIn 1 2s ease-out;
-  opacity: .90;
-  border-radius: 10px;
+  animation: fadeIn 1 2s ease-out; 
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 50px;
 }
 
 .box-wrapper > h1 {
@@ -109,5 +114,86 @@ body {
 }
 
 .box-wrapper > .content {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
+
+/* ABOUT ME */
+.selfie-div > img {
+  float: right;
+  border-radius: 60%;
+}
+
+.text-div {
+  width: 70%;
+}
+
+.certificate {
+  width: 250px;
+  border-radius: 15px 15px 0 0;
+  opacity: 50%;
+  transition: .4s;
+}
+
+.certificate:hover {
+  opacity: 100%;
+}
+
+/* PROJECTS */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.single-card {
+  width:300px;
+  margin: 15px;
+  transition: .5s;
+  background-color: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.single-card:hover {
+ background-color: white;
+}
+
+
+
+
+/* CONTACT ME */
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.icons-container > a {
+  width: 75px;
+  height: 65px;
+  text-align: center;
+}
+
+.icons-container > a > .icons {
+  transition: .3s;
+  color:rgb(0, 0, 0);
+  font-size: 40px;
+}
+
+.icons-container > a > .icons:hover {
+  font-size: 50px;
+  color:rgb(255, 255, 255);
+}
+
+.contactme-quote {
+  color: white;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  padding-top: 10vh;
+  width: 60vw;
+  margin: 0 auto;
+}
+
+
+
