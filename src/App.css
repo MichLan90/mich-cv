@@ -118,6 +118,10 @@ html, body {
 }
 
 /* ABOUT ME */
+h2 {
+  font-family: 'Amatic SC', cursive;
+}
+
 .selfie-div > img {
   float: right;
   border-radius: 60%;
