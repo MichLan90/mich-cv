@@ -4,6 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro'
 
 function Navbar() {
+
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+
   return (
     <>
         <nav className="navbar">
@@ -11,18 +15,33 @@ function Navbar() {
                 <Link to="/" className="navbar-logo">
                   <h3><FontAwesomeIcon icon={solid('headset')} style={{color: 'white', fontSize: '28px'}}/></h3>
                 </Link>
-                <Link to="aboutme" className="link-text">
-                  <h3>about me</h3>
-                </Link>
-                <Link to="projects" className="link-text">
-                  <h3>skills</h3>
-                </Link>
-                <Link to="contactme" className="link-text">
-                  <h3>contact</h3>
-                </Link>
-                <div className='menu-icon'>
-                    
+
+                 <ul className={click ? "nav-menu active" : "nav-menu"}>
+
+                   <li className="link-text">
+                    <Link to="aboutme" onClick={handleClick}>
+                      about me
+                    </Link>
+                   </li>
+
+                   <li className="link-text">
+                    <Link to="skills" onClick={handleClick}>
+                      skills
+                    </Link>
+                   </li>
+
+                   <li className="link-text">
+                    <Link to="contactme" onClick={handleClick}>
+                      contact me
+                    </Link>
+                   </li>
+
+                </ul>
+
+                <div className="nav-icon" onClick={handleClick}>
+                  <FontAwesomeIcon icon={click ? solid('times') : solid('bars')}   style={{color: 'white'}} />
                 </div>
+
             </div>
         </nav>
     </>

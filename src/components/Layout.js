@@ -1,4 +1,3 @@
-import Navbar from './Navbar';
 import Hero from './Hero';
 import Aboutme from './Aboutme';
 import Skills from './Skills';
@@ -11,7 +10,7 @@ function Layout() {
         <Routes>
             <Route path="/" exact element={<Hero />}/>
             <Route path="/aboutme" exact element={<Aboutme />}/>
-            <Route path="/projects" exact element={<Skills />}/>
+            <Route path="/skills" exact element={<Skills />}/>
             <Route path="/contactme" exact element={<Contactme />}/>
         </Routes>
         <div className='light x1'></div>
