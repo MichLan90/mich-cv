@@ -42,7 +42,7 @@ function Skills() {
               <p>PHP</p>
             </div>
             <div className='single-icon'>
-              <FontAwesomeIcon icon={brands('html5')} className='icons'/>
+              <FontAwesomeIcon icon={brands('github')} className='icons'/>
               <p>GitHub</p>
             </div>
             <div className='single-icon'>
