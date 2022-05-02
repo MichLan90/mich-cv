@@ -13,7 +13,7 @@ function Navbar() {
         <nav className="navbar">
             <div className="navbar-container">
                 <Link to="/" className="navbar-logo">
-                  <h3><FontAwesomeIcon icon={solid('headset')} style={{color: 'white', fontSize: '28px'}}/></h3>
+                  <h3><FontAwesomeIcon icon={solid('headset')} style={{color: 'white', fontSize: '32px', paddingTop:'18px'}}/></h3>
                 </Link>
 
                  <ul className={click ? "nav-menu active" : "nav-menu"}>

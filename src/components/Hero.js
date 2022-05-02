@@ -17,12 +17,6 @@ function Hero() {
             <Typewriter/>       
         </div>
 
-        <button className='hero-button'>
-            <Link to='aboutme'>
-                <FontAwesomeIcon icon={solid('caret-right')} style={{color: 'white', fontSize: '78px'}} /> 
-            </Link>
-        </button> 
-
     </div>
     </>
 
