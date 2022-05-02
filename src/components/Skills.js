@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro'
+import { brands } from '@fortawesome/fontawesome-svg-core/import.macro'
 import certificate from '../assets/certificate.png'
 
 

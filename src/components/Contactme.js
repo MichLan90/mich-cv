@@ -1,7 +1,6 @@
-import React, {useState} from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro'
+import { solid, brands } from '@fortawesome/fontawesome-svg-core/import.macro'
 import Typewriter from 'typewriter-effect';
 
 function Contactme() {
@@ -24,6 +23,9 @@ function Contactme() {
           </div> 
         <p style={{textAlign: 'center'}}>
         References available upon request
+        </p>
+        <p style={{textAlign: 'center', fontSize: '14px'}}>
+        (c) This website was build with React
         </p>
         </div> 
     </div>

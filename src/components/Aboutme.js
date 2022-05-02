@@ -1,6 +1,5 @@
-import React, {useState} from 'react';
+import React from 'react';
 import selfie from '../assets/selfie.jpg'
-import { Link } from 'react-router-dom';
 
 function Aboutme() {
   return (
