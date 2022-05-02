@@ -6,7 +6,7 @@ import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import
 function Navbar() {
 
   const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
+ /*  const handleClick = () => setClick(!click); */
 
   return (
     <>
@@ -19,26 +19,26 @@ function Navbar() {
                  <ul className={click ? "nav-menu active" : "nav-menu"}>
 
                    <li className="link-text">
-                    <Link to="aboutme" onClick={handleClick}>
+                    <Link to="aboutme" onClick={() => setClick(!click)}>
                       about me
                     </Link>
                    </li>
 
                    <li className="link-text">
-                    <Link to="skills" onClick={handleClick}>
+                    <Link to="skills" onClick={() => setClick(!click)}>
                       skills
                     </Link>
                    </li>
 
                    <li className="link-text">
-                    <Link to="contactme" onClick={handleClick}>
+                    <Link to="contactme" onClick={() => setClick(!click)}>
                       contact me
                     </Link>
                    </li>
 
                 </ul>
 
-                <div className="nav-icon" onClick={handleClick}>
+                <div className="nav-icon" onClick={() => setClick(!click)}>
                   <FontAwesomeIcon icon={click ? solid('times') : solid('bars')}   style={{color: 'white'}} />
                 </div>
 

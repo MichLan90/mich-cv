@@ -10,7 +10,7 @@ function Aboutme() {
         <h1>About me</h1>
         <div className='content'>
           <div className="selfie-div">
-            <img src={selfie} alt='selfie' style={{width: '300px', textAlign: 'center', marginLeft: '20px'}}/>
+            <img src={selfie} alt='selfie'/>
           </div>
           <div className="text-div"> 
             I am a curious mind and I am passionate about my job. 
