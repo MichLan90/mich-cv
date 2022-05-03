@@ -90,6 +90,7 @@ body {
   letter-spacing: 3px;
   font-size: 32px;
   padding-top: 25%;
+  font-weight:bold;
 }
 
 .link-text:hover {
@@ -132,7 +133,7 @@ body {
   overflow: auto;
   width: 60vw;
   height: auto;
-  background-color: rgb(127, 126, 126);
+  background-color: rgb(223, 222, 222);
   margin: 0 auto;
   margin-top: 15vh;
   -webkit-animation: fadeIn 1 2s ease-out;
@@ -146,12 +147,14 @@ body {
 
 .box-wrapper > h1 {
   font-family: 'Amatic SC', cursive;
+  font-size: 36px;
 }
 
 .box-wrapper > .content {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   line-height: 1.6;
+  font-weight: bold;
 }
 
 /* ABOUT ME */
@@ -294,6 +297,7 @@ h2 {
 
   .link-text > a {
     margin: 0;
+    padding-top: 5%;
   }
 
   h1 {
